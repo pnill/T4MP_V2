@@ -112,12 +112,19 @@ Turok: Evolution is no longer commercially available. The mod works with:
 - Map selection, and game settings integrated into the game.
 - Host and clients sync based on when the host starts the game (If the host has already started the game and a client connects it will appropriately, start their game into the correct map and etc.)
 
-## 👏 Credits
-Special thanks to the following people for their help with testing and architecture:
+## 👏 Credits / Shouts
+Special thanks to the following people for their help with testing, architecture, development assistance or advice, and most importantly listening to rants about the problems over discord while developing the project:
 - Stinkee
 - Dinomite
 - CesartriplePizza
 - djduty
+- Drashid
+- Edward850
+- Nukeulater
+- Berthalamew
+- rel
+- Noseos
+- Reptilethatscool
 
 ## 📜 License
 This project is released under a Modified MIT License.
