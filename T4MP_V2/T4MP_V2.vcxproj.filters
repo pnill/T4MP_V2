@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ImGui">
+      <UniqueIdentifier>{f1d25cdd-0558-4779-b955-99b374551a02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\D3D9Hooks">
+      <UniqueIdentifier>{1f72bfe0-123a-4e14-a528-5268558bff88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TurokEngine">
+      <UniqueIdentifier>{a3c2247c-0abb-4afe-bd90-c218fb241055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ImGui\T4MP UIs">
+      <UniqueIdentifier>{fe2bcf76-6933-4877-9fe0-bbf52f86d523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ImGui">
+      <UniqueIdentifier>{f9696152-e714-4b69-9224-8a7653ae1dcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\D3D9">
+      <UniqueIdentifier>{62c7783f-c4b3-4e2c-8b84-27d14a125eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\dinput">
+      <UniqueIdentifier>{d5de1588-aca9-4b70-a232-6ba5c8674f21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dinput">
+      <UniqueIdentifier>{899c6807-2f16-472e-a515-ec65d969ab8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Networking">
+      <UniqueIdentifier>{ba2a96ad-0174-4e49-96a5-0880d47e2201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Networking">
+      <UniqueIdentifier>{b70bb601-4c88-43f0-ad20-bd8807b94232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TurokEngine">
+      <UniqueIdentifier>{4ed74787-58b2-4dee-ac3f-3b51a4cee4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\T4MP">
+      <UniqueIdentifier>{f6f013d4-d561-49af-8596-363aa46d707a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\T4MP">
+      <UniqueIdentifier>{08864310-0160-4923-879c-2b3cee98e1a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="APIHooks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\ImGui\imgui_impl_dx9.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\ImGui\imgui_impl_win32.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\ImGui\imgui_draw.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\ImGui\imgui.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\ImGui\imgui_widgets.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\D3D9\d3d9dev.cpp">
+      <Filter>Source Files\D3D9Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\D3D9\d3d9int.cpp">
+      <Filter>Source Files\D3D9Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\D3D9\d3d9tex.cpp">
+      <Filter>Source Files\D3D9Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\D3D9\d3d9.cpp">
+      <Filter>Source Files\D3D9Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\ImGui\imgui_demo.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\Dinput\IDIn8.cpp">
+      <Filter>Source Files\dinput</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\Dinput\IDInDev8.cpp">
+      <Filter>Source Files\dinput</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\ImGui\imgui_tables.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="TurokEngine\History.cpp">
+      <Filter>Source Files\TurokEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="TurokEngine\TurokHooks.cpp">
+      <Filter>Source Files\TurokEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\imgui_settingswindow.cpp">
+      <Filter>Source Files\ImGui\T4MP UIs</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\imgui_serverbrowser.cpp">
+      <Filter>Source Files\ImGui\T4MP UIs</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\imgui_renderloop.cpp">
+      <Filter>Source Files\ImGui\T4MP UIs</Filter>
+    </ClCompile>
+    <ClCompile Include="TurokEngine\Level.cpp">
+      <Filter>Source Files\TurokEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\imgui_spawnactor.cpp">
+      <Filter>Source Files\ImGui\T4MP UIs</Filter>
+    </ClCompile>
+    <ClCompile Include="TurokEngine\Actor.cpp">
+      <Filter>Source Files\TurokEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\imgui_debugconsole.cpp">
+      <Filter>Source Files\ImGui\T4MP UIs</Filter>
+    </ClCompile>
+    <ClCompile Include="TurokEngine\Game.cpp">
+      <Filter>Source Files\TurokEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\imgui_directconnect.cpp">
+      <Filter>Source Files\ImGui\T4MP UIs</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\imgui_connectnotif.cpp">
+      <Filter>Source Files\ImGui\T4MP UIs</Filter>
+    </ClCompile>
+    <ClCompile Include="T4MP\Networking\enet_wrapper.cpp">
+      <Filter>Source Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="T4MP\Networking\network_serialization.cpp">
+      <Filter>Source Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="T4MP\Networking\network_handlers.cpp">
+      <Filter>Source Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="T4MP\T4MP_Engine.cpp">
+      <Filter>Source Files\T4MP</Filter>
+    </ClCompile>
+    <ClCompile Include="TurokEngine\DMPlayer.cpp">
+      <Filter>Source Files\TurokEngine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="APIHooks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\D3D9\d3d9.h">
+      <Filter>Header Files\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\D3D9\d3d9dev.h">
+      <Filter>Header Files\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\D3D9\d3d9int.h">
+      <Filter>Header Files\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\D3D9\d3d9tex.h">
+      <Filter>Header Files\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\Dinput\IDIn8.h">
+      <Filter>Header Files\dinput</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\Dinput\IDInDev8.h">
+      <Filter>Header Files\dinput</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\ImGui\imconfig.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\ImGui\imgui.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\ImGui\imgui_impl_dx9.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\ImGui\imgui_impl_win32.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="TurokEngine\History.h">
+      <Filter>Header Files\TurokEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="TurokEngine\Game.h">
+      <Filter>Header Files\TurokEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="T4MP\types.h">
+      <Filter>Header Files\TurokEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="TurokEngine\Level.h">
+      <Filter>Header Files\TurokEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="TurokEngine\OldEngineStruct.h">
+      <Filter>Header Files\TurokEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="TurokEngine\Actor.h">
+      <Filter>Header Files\TurokEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="TurokEngine\T4Game.h">
+      <Filter>Header Files\TurokEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\imgui_debugconsole.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="T4MP\Networking\enet_wrapper.h">
+      <Filter>Header Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="T4MP\Networking\network_packets.h">
+      <Filter>Header Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="T4MP\Networking\network_handlers.h">
+      <Filter>Header Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="T4MP\Networking\network_serialization.h">
+      <Filter>Header Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\imgui_notify.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="T4MP\Networking\network_player.h">
+      <Filter>Header Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="T4MP\T4MP_Engine.h">
+      <Filter>Header Files\T4MP</Filter>
+    </ClInclude>
+    <ClInclude Include="TurokEngine\DMPlayer.h">
+      <Filter>Header Files\TurokEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

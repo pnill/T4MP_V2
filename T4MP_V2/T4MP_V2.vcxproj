@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{662A2DE6-6D7B-4BAA-9E16-7DD55F0CCB37}</ProjectGuid>
+    <RootNamespace>T4MP_V2</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>3rdparty\DX9\Lib\x86;3rdparty\enet-1.3.18;3rdparty\MinHook_133_lib\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>3rdparty\DX9\Include;3rdparty\imgui-1.79\;3rdparty\enet-1.3.18\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>3rdparty\DX9\Include;3rdparty\imgui-1.79\;3rdparty\enet-1.3.18\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>3rdparty\DX9\Lib\x86;3rdparty\enet-1.3.18;3rdparty\MinHook_133_lib\lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libMinHook.x86.lib;ws2_32.lib;winmm.lib;enet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libMinHook.x86.lib;ws2_32.lib;winmm.lib;enet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)T4MP$(TargetExt)</OutputFile>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="3rdparty\D3D9\d3d9.cpp" />
+    <ClCompile Include="3rdparty\D3D9\d3d9dev.cpp" />
+    <ClCompile Include="3rdparty\D3D9\d3d9int.cpp" />
+    <ClCompile Include="3rdparty\D3D9\d3d9tex.cpp" />
+    <ClCompile Include="3rdparty\Dinput\IDIn8.cpp" />
+    <ClCompile Include="3rdparty\Dinput\IDInDev8.cpp" />
+    <ClCompile Include="3rdparty\ImGui\imgui.cpp" />
+    <ClCompile Include="3rdparty\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="3rdparty\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="3rdparty\ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="3rdparty\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="3rdparty\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="3rdparty\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="APIHooks.cpp" />
+    <ClCompile Include="DllMain.cpp" />
+    <ClCompile Include="GUI\imgui_connectnotif.cpp" />
+    <ClCompile Include="GUI\imgui_debugconsole.cpp" />
+    <ClCompile Include="GUI\imgui_directconnect.cpp" />
+    <ClCompile Include="GUI\imgui_renderloop.cpp" />
+    <ClCompile Include="GUI\imgui_serverbrowser.cpp" />
+    <ClCompile Include="GUI\imgui_settingswindow.cpp" />
+    <ClCompile Include="GUI\imgui_spawnactor.cpp" />
+    <ClCompile Include="T4MP\Networking\enet_wrapper.cpp" />
+    <ClCompile Include="T4MP\Networking\network_handlers.cpp" />
+    <ClCompile Include="T4MP\Networking\network_serialization.cpp" />
+    <ClCompile Include="T4MP\T4MP_Engine.cpp" />
+    <ClCompile Include="TurokEngine\Actor.cpp" />
+    <ClCompile Include="TurokEngine\DMPlayer.cpp" />
+    <ClCompile Include="TurokEngine\Game.cpp" />
+    <ClCompile Include="TurokEngine\History.cpp" />
+    <ClCompile Include="TurokEngine\Level.cpp" />
+    <ClCompile Include="TurokEngine\TurokHooks.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3rdparty\D3D9\d3d9.h" />
+    <ClInclude Include="3rdparty\D3D9\d3d9dev.h" />
+    <ClInclude Include="3rdparty\D3D9\d3d9int.h" />
+    <ClInclude Include="3rdparty\D3D9\d3d9tex.h" />
+    <ClInclude Include="3rdparty\Dinput\IDIn8.h" />
+    <ClInclude Include="3rdparty\Dinput\IDInDev8.h" />
+    <ClInclude Include="3rdparty\ImGui\imconfig.h" />
+    <ClInclude Include="3rdparty\ImGui\imgui.h" />
+    <ClInclude Include="3rdparty\ImGui\imgui_impl_dx9.h" />
+    <ClInclude Include="3rdparty\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="APIHooks.h" />
+    <ClInclude Include="GUI\imgui_debugconsole.h" />
+    <ClInclude Include="GUI\imgui_notify.h" />
+    <ClInclude Include="T4MP\Networking\enet_wrapper.h" />
+    <ClInclude Include="T4MP\Networking\network_handlers.h" />
+    <ClInclude Include="T4MP\Networking\network_packets.h" />
+    <ClInclude Include="T4MP\Networking\network_player.h" />
+    <ClInclude Include="T4MP\Networking\network_serialization.h" />
+    <ClInclude Include="T4MP\T4MP_Engine.h" />
+    <ClInclude Include="T4MP\types.h" />
+    <ClInclude Include="TurokEngine\Actor.h" />
+    <ClInclude Include="TurokEngine\DMPlayer.h" />
+    <ClInclude Include="TurokEngine\Game.h" />
+    <ClInclude Include="TurokEngine\History.h" />
+    <ClInclude Include="TurokEngine\Level.h" />
+    <ClInclude Include="TurokEngine\OldEngineStruct.h" />
+    <ClInclude Include="TurokEngine\T4Game.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
